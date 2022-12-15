@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Clone</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi-journal-bookmark-fill"></i></a>
+            <div class="d-flex align-items-center bg-secondary px-3 py-1 rounded-5 me-auto">
+                <i class=" bi-search"></i>
+                <input type="text" class="form-control bg-transparent border-0" placeholder="Search Medium">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class=" bi-pencil me-1"></i> Write</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><button class="btn btn-success rounded-pill">Sign
+                                Up</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><button class="btn">Sign In</button></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class=" bi-person fs-4"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="read">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 border-end">
+                        <div class="heading pt-5 mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class=" bi-tag-fill bg-secondary py-1 px-2 rounded-circle me-2"></i>
+                                <h1 class="fw-bold">Programming</h1>
+                            </div>
+                            <button class=" btn btn-success rounded-pill ms-3">Follow</button>
+                            <button class=" btn btn-outline-success rounded-pill">Start Writing</button>
+                        </div>
+                        <div class="breadcrumb border-bottom me-4 ">
+                            <nav aria-label="breadcrumb " style="--bs-breadcrumb-divider: '';">
+                                <ol class="breadcrumb ms-1">
+                                    <li class="breadcrumb-item"><a href="#" class="btn text-black-50">Trending</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="btn text-black-50">Latest</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="btn text-black-50">Best</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <article class=" p-4 ps-0 border-bottom me-4">
+                            <div class="info">
+                                <div class="d-flex align-items-center mb-1">
+                                    <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=846&q=80"
+                                        alt="" height="30" width="30" style="object-fit: cover;"
+                                        class="rounded-circle me-2 ">
+                                    <p class=" text-black-50 pt-3"><span class=" text-dark">Frank
+                                            Andrade</span> in <span class=" text-dark">Geek Culture</span> · 17 hours
+                                        ago
+                                        <i class=" bi-star-fill text-warning"></i> Member-only
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="fw-bold">ChatGPT: The End of Programming (As We Know It)</h4>
+                                    <p class=" text-wrap">And the beginning of cooler things. — The first time I used
+                                        ChatGPT, it blew up
+                                        my mind. I couldn’t believe this AI-powered chatbot could write code in many
+                                        languages, debug code, translate
+                                        code from one...</p>
+                                    <div class="d-flex justify-content-between w-100 pt-3">
+                                        <div>
+                                            <span class="bg-secondary rounded-pill py-1 px-2">Programming</span>
+                                            <span class=" text-black-50">4 min read</span>
+                                        </div>
+                                        <a href="#"><i class=" bi-bookmark text-dark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-2 offset-1">
+                                    <img src="https://miro.medium.com/fit/c/224/224/1*f0RI0o8w9uA40XPR1PuSJw.jpeg"
+                                        class="w-100" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article class=" p-4 ps-0 border-bottom me-4">
+                            <div class="info">
+                                <div class="d-flex align-items-center mb-1">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="" height="30" width="30" style="object-fit: cover;"
+                                        class="rounded-circle me-2 ">
+                                    <p class=" text-black-50 pt-3"><span class=" text-dark">Osama (Oisee) Ishtiaq
+
+                                        </span> · 1 day ago
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="fw-bold">I am switching from VS Code to Vim</h4>
+                                    <p class=" text-wrap">Ever since I started programming professionally in 2015, I’ve
+                                        heard a lot of nice things about VIM. People who use it
+                                        swear by it’s efficiency and the productivity boost it provides. I too always
+                                        thought Vim was...</p>
+                                    <div class="d-flex justify-content-between w-100 pt-3">
+                                        <div>
+                                            <span class="bg-secondary rounded-pill py-1 px-2">Programming</span>
+                                            <span class=" text-black-50">4 min read</span>
+                                        </div>
+                                        <a href="#"><i class=" bi-bookmark text-dark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-2 offset-1">
+                                    <img src="https://miro.medium.com/fit/c/224/224/1*J6PkeH8ET_kkhCdbrJ19pA.png"
+                                        class="w-100" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article class=" p-4 ps-0 border-bottom me-4">
+                            <div class="info">
+                                <div class="d-flex align-items-center mb-1">
+                                    <img src="https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80"
+                                        alt="" height="30" width="30" style="object-fit: cover;"
+                                        class="rounded-circle me-2 ">
+                                    <p class=" text-black-50 pt-3"><span class=" text-dark">Tom Smykowski
+
+                                        </span> · 1 day ago
+                                        <i class=" bi-star-fill text-warning"></i> Member-only
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="fw-bold">⚙️ 5 Awesome Rust Projects People Don’t Know About</h4>
+                                    <p class=" text-wrap">Rust is becoming an industry standard for modern, performant
+                                        apps. Check out five project that prove how comprehensive
+                                        Rust is! Leptos...</p>
+                                    <div class="d-flex justify-content-between w-100 pt-3">
+                                        <div>
+                                            <span class="bg-secondary rounded-pill py-1 px-2">Programming</span>
+                                            <span class=" text-black-50">3 min read</span>
+                                        </div>
+                                        <a href="#"><i class=" bi-bookmark text-dark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-2 offset-1">
+                                    <img src="https://miro.medium.com/fit/c/224/224/1*x7nKJhZojdg2kt4KG4lVtQ.png"
+                                        class="w-100" alt="">
+                                </div>
+                            </div>
+                        </article>
+                        <article class=" p-4 ps-0 border-bottom me-4">
+                            <div class="info">
+                                <div class="d-flex align-items-center mb-1">
+                                    <img src="https://images.unsplash.com/photo-1596434300655-e48d3ff3dd5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1086&q=80"
+                                        alt="" height="30" width="30" style="object-fit: cover;"
+                                        class="rounded-circle me-2 ">
+                                    <p class=" text-black-50 pt-3"><span class=" text-dark">Rashida Nasrin Sucky</span>
+                                        in <span class=" text-dark">Towards Data Science</span> ·
+                                        ·1 day ago
+                                        <i class=" bi-star-fill text-warning"></i> Member-only
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="fw-bold">Some Basic Image Preprocessing Operations for Beginners in
+                                        Python</h4>
+                                    <p class=" text-wrap">OpenCV for beginners: move or translate, resize, and cropping
+                                        — One of the most used libraries for handling image
+                                        processing and...</p>
+                                    <div class="d-flex justify-content-between w-100 pt-3">
+                                        <div>
+                                            <span class="bg-secondary rounded-pill py-1 px-2">Programming</span>
+                                            <span class=" text-black-50">6 min read</span>
+                                        </div>
+                                        <a href="#"><i class=" bi-bookmark text-dark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-2 offset-1">
+                                    <img src="https://miro.medium.com/fit/c/224/224/0*cQPq8m4eOdprx_3y" class="w-100"
+                                        alt="">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-3 right-section">
+                        <div class="ps-4 pt-5">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="fw-bold">267K</h3>
+                                    <p class="text-dark">Stories</p>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="fw-bold">92K</h3>
+                                    <p class="text-dark">Writers</p>
+                                </div>
+                                <div class="pb-4 border-bottom">
+                                    <a href=""><img
+                                            src="https://images.unsplash.com/photo-1558499932-9609acb6f443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                            alt="" height="40" width="40" style="object-fit: cover;"
+                                            class="rounded-circle userstack-1"></a>
+                                    <a href=""><img
+                                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                            alt="" height="40" width="40" style="object-fit: cover;margin-left:-10px;"
+                                            class="rounded-circle userstack-2"></a>
+                                    <a href=""><img
+                                            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                                            alt="" height="40" width="40" style="object-fit: cover;margin-left:-10px;"
+                                            class="rounded-circle userstack-3"></a>
+                                    <a href=""><img
+                                            src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                            alt="" height="40" width="40" style="object-fit: cover;margin-left:-10px;"
+                                            class="rounded-circle userstack-4"></a>
+                                    <a href=""><img
+                                            src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+                                            alt="" height="40" width="40" style="object-fit: cover;margin-left:-10px;"
+                                            class="rounded-circle userstack-5"></a>
+                                    <a href=""><img
+                                            src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                            alt="" height="40" width="40" style="object-fit: cover;margin-left:-10px;"
+                                            class="rounded-circle userstack-6"></a>
+                                    <a href=""><img
+                                            src="https://images.unsplash.com/photo-1665686304355-0b09b1e3b03c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                            alt="" height="40" width="40" style="object-fit: cover;margin-left:-10px;"
+                                            class="rounded-circle userstack-7"></a>
+                                </div>
+                            </div>
+                            <div class="topics py-5">
+                                <h5 class="mb-3">Related Topics</h5>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Software
+                                    Development</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">JavaScript</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Web
+                                    Development</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Coding</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Software
+                                    Engineering</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Technology</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Python</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Data Science</button>
+                                <button class=" btn btn-secondary text-nowrap rounded-pill mb-3">Machine
+                                    Learning</button>
+                            </div>
+                            <div class="top-writer py-5 pt-3">
+                                <h5 class="mb-3">Top Writers</h5>
+                                <div class="profile py-1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <a href=""><img
+                                                    src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+                                                    alt="" height="40" width="40" style="object-fit: cover;"
+                                                    class="rounded-circle userstack-3"></a>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row align-items-center">
+                                                <div class="col-8">
+                                                    <h5 class="fw-bold">javinpaul</h5>
+                                                    <p class="text-black-50">I am Java programmer, blogger, working
+                                                        on
+                                                        Java
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-3 ">
+                                                    <button class=" btn btn-success rounded-pill ">Follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile py-1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <a href=""><img
+                                                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                                    alt="" height="40" width="40" style="object-fit: cover;"
+                                                    class="rounded-circle userstack-3"></a>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row align-items-center">
+                                                <div class="col-8">
+                                                    <h5 class="fw-bold">Bhargav Bachina</h5>
+                                                    <p class="text-black-50">Entrepreneur | 600+ Tech Articles |
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-3 ">
+                                                    <button class=" btn btn-success rounded-pill ">Follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile py-1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <a href=""><img
+                                                    src="https://images.unsplash.com/photo-1488716820095-cbe80883c496?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                                                    alt="" height="40" width="40" style="object-fit: cover;"
+                                                    class="rounded-circle userstack-3"></a>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row align-items-center">
+                                                <div class="col-8">
+                                                    <h5 class="fw-bold">Frank Andrade</h5>
+                                                    <p class="text-black-50">6M+ Views on Medium || Code Less
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-3 ">
+                                                    <button class=" btn btn-success rounded-pill ">Follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile py-1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <a href=""><img
+                                                    src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                                    alt="" height="40" width="40" style="object-fit: cover;"
+                                                    class="rounded-circle userstack-3"></a>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row align-items-center">
+                                                <div class="col-8">
+                                                    <h5 class="fw-bold">Giorgos Myrianthous</h5>
+                                                    <p class="text-black-50">I write about Python, DataOps and MLOps
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-3 ">
+                                                    <button class=" btn btn-success rounded-pill ">Follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile py-1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <a href=""><img
+                                                    src="https://images.unsplash.com/photo-1542740348-39501cd6e2b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                                    alt="" height="40" width="40" style="object-fit: cover;"
+                                                    class="rounded-circle userstack-3"></a>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="row align-items-center">
+                                                <div class="col-8">
+                                                    <h5 class="fw-bold">fatfish</h5>
+                                                    <p class="text-black-50">Hi friends, I am a front-end engineer from
+                                                        Alibaba
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-3 ">
+                                                    <button class=" btn btn-success rounded-pill ">Follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class=" btn text-success pt-2 ps-0">See More</button>
+                                <button class=" btn text-black-50 d-block py-4 ps-0">Visit the archive</button>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Help</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Status</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Writers</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Blog</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Careers</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Privacy</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Terms</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">About</a>
+                                <a href="#" class="text-black-50 text-decoration-none me-2">Text to Speech</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

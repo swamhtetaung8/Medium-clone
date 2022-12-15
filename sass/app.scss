@@ -1,0 +1,56 @@
+$secondary: rgb(238, 238, 238);
+$input-focus-width: 0;
+$component-active-bg: rgb(250, 250, 250);
+$btn-padding-x: 12px;
+$btn-padding-y: 5px;
+$breadcrumb-item-padding-x: .3rem;
+$breadcrumb-margin-bottom: 0.3rem;
+$font-size-base: 0.9rem;
+
+main .right-section a .userstack-1 {
+    position: relative;
+    z-index: 10;
+    border: 2px solid white;
+}
+
+main .right-section a .userstack-2 {
+    position: relative;
+    z-index: 9;
+    border: 2px solid white;
+}
+
+main .right-section a .userstack-3 {
+    position: relative;
+    z-index: 8;
+    border: 2px solid white;
+}
+
+main .right-section a .userstack-4 {
+    position: relative;
+    z-index: 7;
+    border: 2px solid white;
+}
+
+main .right-section a .userstack-5 {
+    position: relative;
+    z-index: 6;
+    border: 2px solid white;
+}
+
+main .right-section a .userstack-6 {
+    position: relative;
+    z-index: 5;
+    border: 2px solid white;
+}
+
+main .right-section a .userstack-7 {
+    position: relative;
+    z-index: 4;
+    border: 2px solid white;
+}
+
+main .right-section .top-writer p {
+    font-size: 13px;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
